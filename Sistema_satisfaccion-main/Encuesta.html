@@ -1,0 +1,35 @@
+<!-- Autor: Hernandez Lopez Raul @Neo
+     Correo: freeenergy1975@gmail.com
+     Fecha: Martes 9 de Agosto del 2022
+    -->
+
+    <html>
+        <head>
+            <title>Inicio</title>
+            <meta charset="utf-8"/>
+            <link rel="stylesheet" href="styles/style_encuesta.css">
+        </head>
+        <body>
+            <section class="Encuesta">
+                <article>
+                    <!--Creacion del formulario-->
+                    <form type="form" class="login-form"> 
+                        <h2>Encuesta de satisfaccion</h2>          
+                        <br/><br/>
+                        <img src="resourse/feliz.png" id="img_feliz" value=1/>
+                        <img src="resourse/triste.png" id="img_triste"/>
+                        <img src="resourse/enojado.png" id="img_enojado"/>
+                        <br/><br/>
+                        <input type="text" id="txtComentario" placeholder="Comentario"/>
+                        <br/><br/>
+                        <input type="text" id="txtFolio" placeholder="Folio"/>
+                        <br/><br/>
+                        <button type="button" id="btnEnviar">Enviar</button>
+                        <input type="reset" id="btnNuevo"/>
+                    </form>
+                </article>
+            </section>
+
+            <script src="JS/Encuesta.js" type="module"></script>
+        </body>
+    </html> 

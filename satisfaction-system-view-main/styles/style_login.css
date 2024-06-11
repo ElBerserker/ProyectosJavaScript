@@ -1,0 +1,70 @@
+.container {
+    /* Asignando propiedad grid	*/
+    display: grid;
+    place-items: center;
+    /* Ocupa el 100% de la ventana visible viuport height*/
+    height: 100vh;
+}
+
+.login-form {
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    width: 300px;
+
+    display: grid;
+    grid-template-areas:
+    "title title title"
+    "username username username"
+    "passwd passwd passwd"
+    ". btn btn";
+
+    text-align: center;
+}
+
+.login-form h2{
+    grid-area: title;
+}
+
+.login-form input[type="text"]{
+    grid-area: username;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.login-form input[type="password"]{
+    grid-area: passwd;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.login-form button{
+    grid-area: btn;
+    margin: 5px 0px 5px;	
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .login-form{
+        grid-template-areas:
+            "title title title"
+            "username username username"
+            "passwd passwd passwd"
+            "btn btn btn";
+    }
+}

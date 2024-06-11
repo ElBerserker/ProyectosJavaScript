@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menú</title>
+        <meta charset="utf-8"/>
+	<!-- Por compatibilidad con antiguos navegadores-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!-- Politica mobile first-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles/style_menu_administrador.css"/>
+    </head>
+    <body>
+	<div class="container">
+            <form class="menu_form">
+                <h1>Menú</h1>                
+                <input type="button" class="btn" id="btnGestionUsuario" value="Gestionar usuarios">
+                <input type="button" class="btn" id="btnEncuesta" value="Aplicar Encuesta"/>
+                <input type="button" class="btn" id="btnGrafica" value="Mostrar Graficas">             	
+           </form>
+       </div>
+
+       <script>
+            const btnGestionUsuario = document.getElementById('btnGestionUsuario');
+            const btnGrafica = document.getElementById('btnGrafica');
+            const btnEncuesta = document.getElementById('btnEncuesta');
+
+            btnEncuesta.addEventListener('click', () => {
+                window.location = "Encuesta.html"
+            });
+
+            btnGrafica.addEventListener('click', () => {
+                window.location = "Graficas.html"
+            });
+
+            btnGestionUsuario.addEventListener('click', () => {
+                window.location = "GestionUsuarios.html"
+            });
+        </script>
+    </body>
+</html>

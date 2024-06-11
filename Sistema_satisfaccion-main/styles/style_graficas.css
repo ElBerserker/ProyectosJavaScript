@@ -1,0 +1,10 @@
+h2{
+    text-align: center;
+}
+
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

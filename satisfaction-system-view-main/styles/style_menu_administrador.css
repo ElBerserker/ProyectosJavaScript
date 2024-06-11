@@ -1,0 +1,59 @@
+.container {
+    /* Asigna propiedad grid*/
+    display: grid;
+    place-items: center;
+    /* Ocupa el 100% de la ventana visible "viewport height"*/
+    height: 100vh;    
+}
+
+.menu_form {
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 5px;
+    /* Define el alto y el ancho del formulario*/
+    width: 300px;
+   /* Asigna la propiedad diplay y el orden de los componentes*/
+    display: grid;
+
+    grid-template-areas: 
+    "title"
+    "btn_1"
+    "btn_2"
+    "btn_3";
+
+    text-align: center;
+}
+
+.menu_form h1{
+    grid-area: title;
+}
+
+.btn{
+   margin: 5px 20px 5px;
+   padding: 10px;
+   border-radius:10px;
+
+   color: black;
+   background-color: white;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn:nth-child(1){
+    grid-area: btn_1;
+}
+
+.btn:nth-child(2){
+    grid-area: btn_2;
+}
+
+.btn:nth-child(3){
+    grid-area: btn_3;
+}
+
+

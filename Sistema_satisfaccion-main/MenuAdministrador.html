@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menú</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./styles/style_menu_administrador.css">
+    </head>
+    <body>
+        <form class="form">
+            <h1>Menú</h1>
+            <br/>
+            <input type="button" id="btnGestionUsuario" value="Gestionar usuarios">
+            <br/><br/>
+            <input type="button" id="btnGrafica" value="Mostrar Graficas">
+            <br/><br/>
+            <input type="button" id="btnEncuesta" value="Aplicar Encuesta"/>
+            <br/><br/>
+        </form>
+
+        <script>
+            const btnGestionUsuario = document.getElementById('btnGestionUsuario');
+            const btnGrafica = document.getElementById('btnGrafica');
+            const btnEncuesta = document.getElementById('btnEncuesta');
+
+            btnEncuesta.addEventListener('click', () => {
+                window.location = "/ProyectoLynx/Encuesta.html"
+            });
+
+            btnGrafica.addEventListener('click', () => {
+                window.location = "/ProyectoLynx/Graficas.html"
+            });
+
+            btnGestionUsuario.addEventListener('click', () => {
+                window.location = "/ProyectoLynx/GestionUsuarios.html"
+            });
+        </script>
+    </body>
+</html>

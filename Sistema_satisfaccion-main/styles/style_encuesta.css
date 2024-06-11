@@ -1,0 +1,32 @@
+body{
+    margin-top: 50px;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.login-form{
+    width: 60%;
+    margin: auto;
+    padding: 100px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10PX;
+}
+
+img{
+    align-items: center;
+    width: 27%;
+    padding: 13px;
+}
+
+button, input[type="reset"]{   
+    padding: 10px;
+    border-radius: 10PX;
+}

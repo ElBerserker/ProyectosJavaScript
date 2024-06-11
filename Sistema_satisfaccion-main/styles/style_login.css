@@ -1,0 +1,46 @@
+body{
+    /*Establece el color de fondo de la pagina*/
+    margin-top: 100px;
+    background-color:white;
+}
+
+.login-form{
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h2{
+    /*Color y alineacion del elemento h2 del formulario*/
+    color: black;
+    text-align: center;
+}
+
+input[type = text] {
+    /*Establece que el ancho del elemento sera el 100% del 
+    espacio que tenga disponible*/
+    width: 100%;
+    /*Establece el alto del elemento*/
+    padding: 10px;
+
+    margin: 10px;
+    /*le asigna un efecto redondeado al elemento*/
+    border-radius: 10px;
+}
+
+input[type = password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+button {
+    width: 30%;
+    padding: 10px;
+    margin-left: 10PX;
+    border-radius: 10px;
+}
+

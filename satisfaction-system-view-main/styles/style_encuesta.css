@@ -1,0 +1,101 @@
+.container{
+    display:grid;
+    place-items:center;
+    /* Ocupa el 100% de la ventana visible "viewport heiht"*/
+    height: 100vh;
+}
+
+.encuesta_form {
+    border:1px solid;
+    padding: 40px;
+    border-radius: 5px;
+
+    width: 300px;
+
+    display:grid;
+
+    grid-template-areas:
+    "title title title"
+    "img_feliz img_triste img_enojado"
+    "comentario comentario comentario"
+    "folio folio folio"
+    "enviar enviar enviar"
+    "borrar borrar borrar";
+
+    text-align: center;
+}
+/* Titulo*/
+.encuesta_form h2{
+    grid-area: title;
+}
+
+/* Configuracion e imagenes*/
+img{
+   height: 65px;
+   width: 65px;
+   margin: 20px auto 20px;
+   transition: 0.4s;
+}
+
+img:hover{
+    height: 50px;
+    width: 50px;
+}
+
+img:target{
+    background-color: yellow;
+}
+
+img:nth-child(1){
+    grid-area: img_feliz;
+}
+
+img:nth-child(2){
+    grid-area: img_triste;
+}
+
+img:nth-child(3){
+    grid-area: img_enojado;
+}
+
+/* Entradas de texto */
+.encuesta_form input[type="text"]{
+    margin: 5px 20px 5px;	
+    padding:10px;    
+    border-radius:5px;
+}
+
+.encuesta_form input[type="text"]:nth-of-type(1){
+   grid-area: comentario;
+}
+
+.encuesta_form input[type="text"]:nth-of-type(2){
+   grid-area: folio;
+}
+
+/* Botones */
+.btn{
+    margin: 5px 20px 5px;
+    padding: 10px;
+    border-radius:5px;
+
+    color: black;
+    background-color: white;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover{
+   background-color: black;
+   color: white;
+}
+
+.encuesta_form button[type="button"]{
+   grid-area: enviar;
+}
+
+.encuesta_form input[type="reset"]{
+   grid-area: borrar;
+}
+
+

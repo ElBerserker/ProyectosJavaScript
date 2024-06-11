@@ -1,0 +1,15 @@
+body{   	
+    /*height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    place-items:center;
+    height: 100vh;
+    text-align:center;
+}
+
+.grafica{
+   height: 400px;	
+   width: 400px;
+}

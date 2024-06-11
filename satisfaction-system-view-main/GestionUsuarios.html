@@ -1,0 +1,75 @@
+<!-- Nombre: Hernandez Lopez Raul @Neo
+     Correo:  freeenergy1975@gmail.com
+     fecha: Lunes 1 de Agosto del 2022-->
+
+<!-- Si puedes imaginarlo, puedes programarlo.-->
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Proyecto Lynx</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles/style_gestion_usuarios.css">
+    </head>
+
+    <body>
+        <section class="crud">
+            <!-- Esta parte corresponde el formulario principal-->
+            <article>
+
+                <h2 class="crud-title">AGREGAR USUARIO</h2>
+
+                <form class="crud-form">
+                    <input type="text" name="nombre_usuario" placeholder="nombre" required/>
+                    <br/><br/>
+                    <input type="password" name="contrasenia_usuario" placeholder="contraseña" required/>
+                    <br/><br/>
+                    <input type="text" name="tipo_usuario" placeholder="tipo" required/>
+                    <br/><br/>
+	                 <input type="text" name="estado_usuario" id = "estado" placeholder="estado"  required/>
+                    <br/><br/>					
+                    <input type="submit" value="enviar"/>
+                    <input type="reset" value="nuevo"/>
+                    <!-- El input oculto servira para definir el tipo de accion que se realizara con el 
+                         formularios, insertar o actulizar-->
+                    <input type="hidden" name="id"/>
+                </form>
+            </article>
+
+            <br/><br/><br/>
+
+            <article>
+                <h2>Lista de usuarios</h2>                
+                <table class="crud-table">
+                    <thead>
+                        <!--TR columnas de la tabla-->
+                        <tr>
+                            <!--En este apartado se define el nombre de las columnas de nuestro 
+                                formulario.-->
+                            <th>Nombre</th>
+                            <th>Contraseña</th>
+                            <th>Tipo</th>
+									 <th>Clave</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </article>
+        </section>
+
+        <template id="crud-template">
+            <tr>
+                <td class="nombre"></td>
+                <td class="contrasenia"></td>
+                <td class="tipo"></td>
+					 <td class="estado"></td>
+                <td>
+                    <button class="edit">Editar</button>
+                    <button class="delete">Eliminar</button>
+                </td>
+            </tr>    
+        </template>
+        <script src="JS/GestionUsuarios.js"></script>
+    </body>
+</html>
